@@ -1,0 +1,301 @@
+*{
+  text-align: center;
+}
+body{
+  overflow: hidden;
+}
+#homePage{
+    background-image: url(images/setAnimation.gif);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100vh;
+}
+#enter_btn {
+  background-image: url(images/כפתור\ כניסה.svg);
+  outline: none;
+}
+
+#submit_btn {
+  background-image: url(images/login.png);
+}
+
+#level1_bth {
+  background-image: url(images/level1.png);
+  /**/
+}
+
+#level2_bth {
+  background-image: url(images/level2.png);
+  /**/
+}
+
+#Instructions_bth {
+  background-image: url(images/Instructions.png);
+  /**/
+}
+#Instruction_bth {
+  background-image: url(images/Instructions.png);
+  /**/
+}
+#Instructions_bth {
+  background-image: url(images/Instructions.png);
+  
+}
+#new_game_bth  {
+  background-image: url(images/new_game.png);
+  
+}
+#add_bth {
+  background-image: url(images/change_card.png);
+  
+}
+#clue_bth {
+  background-image: url(images/clue.png);
+  
+}
+.game_over{
+  background-image: url(images/game_over.jpg)!important;
+}
+button {
+  /**/
+  background: none;
+  border: none;
+  background-size: 100%;
+  height: 3rem;
+  width: 7rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+ .invisible {
+  display: none;
+}
+
+.login_f {
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+#enter_btn{
+    margin: 65vh auto 5vh auto;
+}
+#f {
+  padding: 3rem;
+  background-color: #fefefe;
+  margin: 15vh auto 15vh auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 35vw;
+  /* Could be more or less, depending on screen size */
+  height: 45vh;
+  animation: animatezoom 0.6s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#img_profil{
+   
+    height: 11vh;
+    margin: auto;
+    display: block;
+}
+
+
+input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: inline-block;
+}
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+ #score{
+  background-image: url(images/score.png);
+  background-size: contain;
+    background-repeat: no-repeat;
+    height: 11vh;
+    font-size: 3rem;
+ } 
+#gameP{
+background-image: url(images/רקע2.png);
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-around;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    margin: 0;
+}
+#container_gameP{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: row-reverse;
+}
+.cards{
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: white;
+    padding: 2rem;
+    margin: auto;
+}
+.card{
+    height: 26vh;
+    width: 18vh;
+    padding: 0;
+    border-radius: 12px;
+    box-shadow: 0 10px 10px -5px #542E8C;
+}
+.card_active{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;;
+ border: 2px solid black;
+ border-radius: 0;
+}
+.card>img{
+    height: 100%;
+    width: 100%;
+}
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+#app{
+  margin: 5% 0 0 0;
+}
+.base-timer {
+    position: relative;
+    width: 12vw;
+    
+  }
+  
+  .base-timer__svg {
+    transform: scaleX(-1);
+   
+  }
+  
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+  }
+  
+  .base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+  }
+  
+  .base-timer__path-remaining.orange {
+    color: orange;
+  }
+  
+  .base-timer__path-remaining.red {
+    color: red;
+  }
+  
+  .base-timer__label {
+    position: absolute;
+  
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vw;
+    margin: 35%;
+  }
+  .clue_card{
+    border: 3px solid greenyellow
+  }
+  #timer_bth{
+    display: flex;
+    flex-direction: column;
+    margin: 15vh auto 15vh auto;
+  }
+#bth{
+  display: flex;
+  flex-direction: column;
+}
+
+.end{
+  padding-right: 5vw;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

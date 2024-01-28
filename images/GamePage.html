@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="JavaScript.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <title>🎲המשחק</title>
+</head>
+<body onload="Start1(12)" onunload="finishGame()">
+    <header class="header">
+
+        <div class="container">
+
+            <div class="menu-mobile">
+                <div class="menu-top">
+                    <div class="menu-content">
+
+                    </div>
+                </div>
+                <div class="menu-bottom">
+                    <div class="menu-content">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                        <div id="myNav" class="menu-all">
+                           
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="menu-all-content">
+                                <h3 id="h31"></h3><br />
+                                <a class="menu-item" onclick="Start1(15)">level 1</a><br /><br />
+                                <a class="menu-item" onclick="Start1(12)">level 2</a><br /><br />
+                                <a class="menu-item" onclick="add3()">add 3 cards</a><br /><br />
+                                <a class="menu-item" href="GamePage.html" onclick="pprint()">print🖨</a><br /><br />
+                                <a class="menu-item" onclick="finishGame()" href="HomePage.html">home</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="oo2">
+            <div class="card1 card2">
+                <span id="score" style="font-weight: bold;"></span>
+            </div>
+            <h1 class="h1o">
+                find a set!
+            </h1>
+            <div class="card1">
+                <span id="countdown" style="font-weight: bold;"></span>
+            </div>
+
+        </div>
+</header>
+    <div>
+        <div id="game" class="game"></div>
+
+    </div>
+</body>
+</html>

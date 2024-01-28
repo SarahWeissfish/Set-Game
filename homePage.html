@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SET</title>
+    <link rel="icon" href="images/SET.png">
+</head>
+
+<body id="homePage">
+
+    <button id="enter_btn"></button>
+    <div id="login_form" class="login_f invisible">  
+        <form action="game.html" name="form" id="f" onsubmit="save_data()">
+            <span class="close" title="Close Modal">&times;</span>
+            <img src="images/profil.png" alt="Avatar" id="img_profil">
+            <label>User Name</label>
+            <input type="text" id="name_input" value="" required>
+            <label>Password</label>
+            <input id="password" type="password" value="" required>
+            <button id="submit_btn" type="submit" value="" ></button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
